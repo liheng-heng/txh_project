@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_friends_data_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_search"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_fail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="二维码缺失"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/v_10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_10" />
+
+            <TextView
+                android:id="@+id/tv_friends_detail"
+                style="@style/text_friends_detail_40"
+                android:text="好友详情"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp">
+
+                <include layout="@layout/user_list" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_phone"
+                style="@style/ll_address_style">
+
+                <TextView
+                    style="@style/delive_group_bg_name"
+                    android:text="账号 ：" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    style="@style/text_style_333_16"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_divide_group"
+                style="@style/ll_address_style">
+
+                <TextView
+                    style="@style/delive_group_bg_name"
+                    android:text="备注" />
+
+                <TextView
+                    android:id="@+id/tv_remarks"
+                    style="@style/text_style_333_16"
+                    android:text="" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/content_return_arrow" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_recommend"
+                style="@style/ll_address_style">
+
+                <TextView
+                    style="@style/delive_group_bg_name"
+                    android:text="把他推荐给好友" />
+
+                <TextView
+                    style="@style/text_style_333_16"
+                    android:text="" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/content_return_arrow" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_shop_detail"
+                style="@style/text_friends_detail_40"
+                android:text="供应商详情"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_shop"
+                style="@style/ll_address_style">
+
+                <TextView
+                    android:id="@+id/tv_shop_type"
+                    style="@style/delive_group_bg_name"
+                    android:text="店铺" />
+
+                <TextView
+                    android:id="@+id/tv_shop_name"
+                    style="@style/text_style_333_16"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_address"
+                style="@style/ll_address_style">
+
+                <TextView
+                    style="@style/delive_address_bg_name"
+                    android:text="地址 ：" />
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    style="@style/text_style_333_16"
+                    android:text="" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_friends"
+                android:text="添加好友"
+                style="@style/btn_full" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

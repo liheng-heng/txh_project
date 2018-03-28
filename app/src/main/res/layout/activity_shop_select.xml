@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_search"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/segment_control_head_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_search"
+        android:clickable="false"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/home_margin_lr"
+            android:layout_marginRight="@dimen/home_margin_lr"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:visibility="gone">
+
+            <com.txh.im.widget.SearchView
+                android:id="@+id/sv"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/search_box"
+                android:cursorVisible="true"
+                android:maxEms="100"
+                android:paddingLeft="15dp"
+                android:paddingRight="3dp"
+                android:singleLine="true"
+                android:textColor="@color/color_333333"
+                android:textCursorDrawable="@drawable/color_cursor"
+                app:etText="搜索门店"
+                app:imagewidth="16dp"
+                app:textColorEdit="@color/grey_text"
+                app:textSizeEdit="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_clear_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center"
+                android:padding="3dp"
+                android:src="@drawable/search_clear"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_sv"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/home_margin_lr"
+            android:layout_marginRight="@dimen/home_margin_lr"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_box"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_search_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="搜索门店"
+                android:textColor="@color/color_666666"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/tv_search_content"
+                android:src="@drawable/order_search" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/function"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:text="暂无门店"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/srl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@id/rc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false" />
+        </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/btn_full"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_bg_gray_999"
+            android:text="确定" />
+    </RelativeLayout>
+
+</LinearLayout>

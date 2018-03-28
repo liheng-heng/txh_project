@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_search_added_friends_acitivty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_search"
+    android:orientation="vertical">
+
+    <include layout="@layout/search_head" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="暂无历史搜索记录" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rc_history"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:text="清除所有搜索历史"
+        android:visibility="gone"
+        android:background="@drawable/history_bg"
+        android:layout_height="35dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_first_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:drawableLeft="@drawable/shape_line_gray"
+            android:drawableRight="@drawable/shape_line_gray"
+            android:gravity="center"
+            android:text="在这里可以搜到" />
+
+        <ImageView
+            android:layout_width="@dimen/dp_80"
+            android:layout_height="@dimen/dp_80"
+            android:layout_gravity="center"
+            android:src="@drawable/scan_friends"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="您的朋友"/>
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@+id/elv"
+        android:layout_width="match_parent"
+        android:groupIndicator="@null"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        android:divider="@color/search_box"
+        android:dividerHeight="0dp"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.2'
+    defaultConfig {
+        applicationId "com.txh.im"
+        minSdkVersion 16
+        targetSdkVersion 24
+        versionCode 26
+        versionName "5.4.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi', 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+        resConfigs "zh"
+        multiDexEnabled true
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "2af6b38211233241f8f9ac6a", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+
+    }
+
+//----------------------------------------------------------
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    //配置keystore签名
+    signingConfigs {
+        release {
+            storeFile file("E:\\tianxiahuo_im.jks")
+            storePassword "123456"
+            keyAlias "china"
+            keyPassword "123456"
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+        }
+        debug {
+            signingConfig signingConfigs.release
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+        }
+    }
+
+//--------------------------------------------------------------------------
+    //添加jsbridge
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+
+    dependencies {
+        compile 'com.github.lzyzsd:jsbridge:1.0.4'
+    }
+
+//-----------------------------------------------------------------------------
+
+    /*针对greenDao的一些配置*/
+    greendao {
+        schemaVersion 1 //数据库版本号
+        daoPackage 'com.txh.im.greendao' //自动生成的工具类的包名
+        targetGenDir 'src/main/java' //路径
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //compile files('libs/butterknife-7.0.1.jar')
+    compile project(':lib-zxing')
+    /*greenDao框架*/
+
+    //最新版本
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.2.0'
+    compile 'com.squareup.okio:okio:1.6.0'
+    compile 'com.squareup.picasso:picasso:2.4.0'
+    //    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.baoyz.swipemenulistview:library:1.3.0'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    //    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.tencent.bugly:crashreport:latest.release'
+    compile 'pub.devrel:easypermissions:0.2.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //    compile 'com.hyphenate:hyphenate-sdk:3.2.3'
+    compile 'org.greenrobot:greendao:3.2.0'
+    compile 'com.facebook.fresco:fresco:0.9.0'
+    compile 'com.gxz.pagerslidingtabstrip:library:1.3'
+    compile 'com.bigkoo:convenientbanner:2.0.5'
+    compile 'com.zxy.android:recovery:0.0.8'
+    compile 'com.youth.banner:banner:1.4.9'
+    compile 'com.yanzhenjie:recyclerview-swipe:1.0.4'
+    compile 'com.gxz:swapmenurecyclerview:1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.8.0@aar'
+    compile project(':easeui')
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.zhy:flowlayout-lib:1.0.3'
+    compile 'com.parse.bolts:bolts-android:1.4.0'
+    //3D地图
+    compile 'com.amap.api:3dmap:latest.integration'
+    //导航
+
+    //    compile 'com.amap.api:navi-3dmap:latest.integration'
+
+    //搜索
+    compile 'com.amap.api:search:latest.integration'
+    //定位
+    compile 'com.amap.api:location:latest.integration'
+    compile files('libs/jcore-android_v1.1.3.jar')
+}
+
+

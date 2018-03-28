@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@null"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/tv_download_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@id/iv_image"
+        android:text="@string/down_state"
+        android:textColor="@color/black" />
+
+    <ProgressBar
+        android:id="@+id/pb_download"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_download_state"
+        android:layout_marginTop="@dimen/dp_3"
+        android:layout_toRightOf="@id/iv_image"
+        android:max="100"
+        android:progress="0" />
+
+</RelativeLayout>

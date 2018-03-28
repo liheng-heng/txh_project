@@ -1,0 +1,98 @@
+<resources>
+
+    <!--登录注册-->
+    <string name="app_name">天下货</string>
+    <string name="exit">再按一次退出天下货</string>
+    <string name="warm_net">您的网络开小差了</string>
+
+
+    <string name="warm_phonenum">请核查您的手机号！</string>
+    <string name="warm_code">请输入正确验证码！</string>
+    <string name="password_desc">密码是由6-20字母、数字组成，字母需要区分大小写</string>
+    <string name="clearedCache">清除成功</string>
+    <string name="http_loading_data">正在加载</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="cancel">取消</string>
+    <string name="location_recv">[%1$s的位置]</string>
+    <string name="location_prefix">[我的位置]</string>
+    <string name="picture">[图片]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    <string name="voice_prefix">[语音]</string>
+    <string name="voice_call">[语音通话]</string>
+    <string name="video_call">[视频通话]</string>
+    <string name="dynamic_expression">[动态表情]</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="Send_voice_need_sdcard_support">发送语音需要sdcard支持</string>
+    <string name="Recording_without_permission">无录音权限</string>
+    <string name="The_recording_time_is_too_short">录音时间太短</string>
+    <string name="send_failure_please">发送失败，请检测服务器是否连接</string>
+    <string name="Is_download_voice_click_later">正在下载语音，稍后点击</string>
+
+    <!--个人中心-->
+    <string name="cancle_to_edit">是否取消编辑？</string>
+    <string name="warm_editinfo">标星为必填项！</string>
+    <string name="warm_address">标红项不能为空！</string>
+    <string name="desc_txhcode">天下货号规则:支持6-20字母、数字组合,以字母开头(最少包含两个字母),仅能设置一次!</string>
+    <string name="warm_nickname">昵称支持2-14位中英文、数字‘-’和‘_’任意组合！</string>
+    <string name="txhcode_tooshort">天下货号必须大于6位！</string>
+    <string name="txhcode_toolong">天下货号不能大于20位！</string>
+    <string name="warm_txhcode">请输入正确的天下货号！</string>
+    <string name="warm_phonecode">请输入正确的联系方式！</string>
+    <string name="warm_shopname">名称支持2-20位中文、英文任意组合！</string>
+    <string name="no_merchant">您还没有添加配送商为好友或您的配送商还没有上架商品！</string>
+    <string name="merchant_search">供应商名称/供应商手机号</string>
+    <string name="warm_shopname_dian">店铺支持2-20位中英文、数字‘-’和‘_’任意组合！</string>
+    <string name="warm_shopname_shang">供应商支持2-20位中英文、数字‘-’和‘_’任意组合！</string>
+    <string name="warm_addressdesc">地址长度为3-60个字！</string>
+    <string name="warm_receiver_name">姓名支持2-14位中文、英文任意组合！</string>
+    <string name="OK">确定</string>
+    <string name="warm_price_for_send">起送价必须大于等于0！</string>
+    <string name="cancle_to_change_character">是确定切换身份？</string>
+    <string name="cancle_to_change_character2">如果切换必须完善商户个人资料。</string>
+    <string name="down_state">正在下载：%s</string>
+    <string name="good_name">商品名称</string>
+    <string name="warm_UnitShortName">简称仅支持中文，不可超过2个长度！</string>
+
+
+
+
+    <!--商城-->
+    <string name="no_order">您还没有相关订单</string>
+    <string name="no_order_search">您搜索的订单不存在</string>
+    <string name="no_search_str">请输入搜索条件！</string>
+    <string name="order_type_1">是否确定接单？</string>
+    <string name="order_type_2">是否拒绝接单？</string>
+    <string name="order_type_3">是否确认发货？</string>
+    <string name="order_type_4">是否确认收货？</string>
+    <string name="order_type_5">是否删除订单？</string>
+    <string name="order_type_8">是否取消订单？</string>
+    <string name="chat_no_mesage">不能发送空白消息</string>
+    <string name="title_activity_goods_place_order_acitivty">GoodsPlaceOrderAcitivty</string>
+
+    <!--easeui-->
+    <string name="at_your_in_group">%s @ you in group chat</string>
+
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="storage_description_title">你能允许存储权限吗?</string>
+    <string name="storage_description_why_we_need_the_permission">你好,地图缓存需要存储权限。你能允许吗?</string>
+    <string name="location_description_title">你能允许定位权限吗?</string>
+    <string name="location_description_why_we_need_the_permission">你好,定位功能需要获取位置权限。你能允许吗?</string>
+
+    <string name="price_group_name_error">价格分组名称支持1-8位中英文、数字</string>
+    <string name="price_group_name_kong">价格分组名称不能为空</string>
+
+    <string name="no_merchany_nearby">附近暂时没有供应商</string>
+
+    <string name="lalo_have_no">部分收货地址未展示，请前往收货地址设置覆盖范围</string>
+
+    <string name="select_album">选择相册</string>
+    <string name="select_photo">选择图片</string>
+    <string name="see_photo">查看</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="uploadpapers">证件上传</string>
+
+
+</resources>

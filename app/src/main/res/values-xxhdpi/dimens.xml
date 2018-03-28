@@ -1,0 +1,13 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="text_18">14sp</dimen>
+    <dimen name="text_16">12sp</dimen>
+    <dimen name="text_14">10sp</dimen>
+    <dimen name="home_single_list">60dp</dimen>
+    <dimen name="civ_size">35dp</dimen>
+    <dimen name="merchant_size">32dp</dimen>
+    <dimen name="text_20">18sp</dimen>
+    <dimen name="price_grop_button_size">90dp</dimen>
+</resources>

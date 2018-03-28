@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_headtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="附近"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/color_333333"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" ( 3km内 ) "
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/color_333333"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_chooseaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_search2"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_8"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_8">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/neighborhood_positioning" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:text="当前位置"
+            android:textColor="@color/color_333333"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/title_recycleview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/huise2" />
+
+    </RelativeLayout>
+
+    <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_class_brand_layout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_class_brand_layout"
+            android:layout_marginTop="@dimen/dp_5"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:id="@+id/rl_recycle_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/content_recycleview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+            </RelativeLayout>
+        </ScrollView>
+
+    </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_no_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_50"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_nodata_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/no_suppliers_nearby" />
+
+        <TextView
+            android:id="@+id/tv_nodata_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_nodata_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="@string/no_merchany_nearby"
+            android:textColor="@color/color_666666"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

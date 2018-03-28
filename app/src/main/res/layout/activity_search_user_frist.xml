@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_search"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_title" />
+
+    <include layout="@layout/search_text" />
+
+    <LinearLayout
+        android:id="@+id/ll_scan_add_friends"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_single_list"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/home_margin_lr"
+            android:src="@drawable/scan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/home_margin_lr"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_333333"
+            android:text="扫一扫加好友" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/home_margin_lr"
+            android:gravity="center_vertical"
+            android:text="我的二维码名片：" />
+
+        <ImageView
+            android:id="@+id/iv_qr"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/home_margin_lr"
+            android:src="@drawable/content_two_dimensional_code" />
+    </LinearLayout>
+</LinearLayout>

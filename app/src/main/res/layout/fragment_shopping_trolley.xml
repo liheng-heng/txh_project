@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/view_bg_color"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_head_title"
+            layout="@layout/head_title2" />
+
+        <FrameLayout
+            android:id="@+id/fl_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_search">
+
+            <include layout="@layout/search_text" />
+
+        </FrameLayout>
+
+        <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/srl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fl_search">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ll_neterror_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/mall_without_network" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:padding="@dimen/dp_5"
+                            android:text="您的网络开小差啦"
+                            android:textColor="@color/color_333333"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp_5"
+                            android:text="点击重新加载或检查网络"
+                            android:textColor="@color/color_333333"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_nodata"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@color/view_bg_color"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/mall_no" />
+
+                        <TextView
+                            android:id="@+id/tv_nodata"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_40"
+                            android:layout_marginRight="@dimen/dp_50"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:gravity="center"
+                            android:lines="2"
+                            android:padding="@dimen/dp_5"
+                            android:text="@string/no_merchant"
+                            android:textColor="@color/color_333333"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <!--二期只需要将layoutbelow去掉即可-->
+
+                    <com.txh.im.widget.ChildRecycleView
+                        android:id="@+id/myrecycleview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false" />
+                </RelativeLayout>
+            </ScrollView>
+        </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="@dimen/dp_20"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:background="@drawable/home_shopping_cart" />
+
+        <TextView
+            android:id="@+id/tv_goods_num"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_18"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:background="@drawable/bg_red_5"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+    </FrameLayout>
+</RelativeLayout>

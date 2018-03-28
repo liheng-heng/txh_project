@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="@dimen/dp_5"
+    android:orientation="vertical"
+    android:paddingRight="5dp">
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp_5"
+        android:ellipsize="end"
+        android:ems="17"
+        android:singleLine="true"
+        android:text="娃哈哈矿泉水(箱)"
+        android:textColor="@color/goods_text_color"
+        android:textSize="@dimen/dp_16" />
+
+    <TextView
+        android:id="@+id/tv_goods_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:paddingBottom="1dp"
+        android:paddingRight="3dp"
+        android:paddingTop="1dp"
+        android:text="245ml*24瓶"
+        android:textColor="@color/goods_text_color"
+        android:textSize="@dimen/dp_12" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥"
+                android:textColor="@color/dipatch_bg"
+                android:textSize="@dimen/dp_15" />
+
+            <TextView
+                android:id="@+id/tv_goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="skin:bg_color:textColor"
+                android:text="284444.20"
+                android:textColor="@color/dipatch_bg"
+                android:textSize="@dimen/dp_19" />
+
+            <TextView
+                android:id="@+id/tv_under_shelf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:background="@drawable/add_border_gray"
+                android:gravity="center"
+                android:padding="@dimen/dp_2"
+                android:text="商品下架"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_old_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_4"
+                android:tag="skin:bg_color:textColor"
+                android:text="¥28444.20"
+                android:layout_marginBottom="@dimen/dp_3"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/text_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_old_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_price"
+            android:layout_marginLeft="@dimen/dp_1"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_full_orange"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_2"
+                android:paddingLeft="@dimen/dp_3"
+                android:paddingRight="@dimen/dp_3"
+                android:paddingTop="@dimen/dp_2"
+                android:text="8.0折"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_12"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_class_brand_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_search">
+
+    <include
+        android:id="@+id/include_head_title"
+        layout="@layout/search_head" />
+
+    <LinearLayout
+        android:id="@+id/ll_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_head_title"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mall_no" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:padding="@dimen/dp_5"
+            android:text="没有相关商品"
+            android:textColor="@color/color_666666"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/myrecycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_head_title"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/fl_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="@dimen/dp_30"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:background="@drawable/home_shopping_cart" />
+
+        <TextView
+            android:id="@+id/tv_goods_num"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_18"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:background="@drawable/bg_red_5"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</RelativeLayout>

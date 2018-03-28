@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_search"
+    android:orientation="vertical">
+
+    <include layout="@layout/search_head" />
+
+
+    <TextView
+        android:id="@+id/tv_inexistence"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_50"
+        android:gravity="center_horizontal"
+        android:text="该用户不存在"
+        android:visibility="gone" />
+    <!--<include layout="@layout/user_list" />-->
+    <ExpandableListView
+        android:id="@+id/elv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/search_box"
+        android:dividerHeight="0dp"
+        android:groupIndicator="@null"
+        android:listSelector="#00000000" />
+
+</LinearLayout>

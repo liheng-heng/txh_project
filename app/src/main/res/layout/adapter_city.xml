@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text="全国"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+</LinearLayout>

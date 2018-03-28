@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_search"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_head_title"
+        layout="@layout/head_title2" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_search"
+        android:visibility="gone">
+
+        <include layout="@layout/search_text" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_left_layout"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="1dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:text="测试名称"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="1dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:text="测试名称"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="1dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:text="测试名称"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="1dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:text="测试名称"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="1dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:text="测试名称"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="1dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:text="测试名称"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="1dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:text="测试名称"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="1dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:text="测试名称"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="1dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:text="测试名称"
+                android:textSize="@dimen/text_16" />
+
+            <View
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="1dp"
+                android:background="@color/view_line" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp_5"
+                android:paddingTop="@dimen/dp_5"
+                android:text="测试名称"
+                android:textSize="@dimen/text_16" />
+
+        </LinearLayout>
+
+        <!--竖直分割线-->
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/view_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_right_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/view_bg_color"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_class_brand_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/red_text">
+
+                <LinearLayout
+                    android:id="@+id/ll_layout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_10">
+
+                    <TextView
+                        android:id="@+id/tv_textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="品类" />
+
+                    <ImageView
+                        android:id="@+id/iv_image1"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:background="@drawable/reasons_for_refusing" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_layout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dp_30"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_10">
+
+                    <TextView
+                        android:id="@+id/tv_textview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="品牌" />
+
+                    <ImageView
+                        android:id="@+id/iv_image2"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:background="@drawable/reasons_for_refusing" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+
+

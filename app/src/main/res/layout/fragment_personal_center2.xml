@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head_title" />
+
+
+    <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_class_brand_layout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/view_bg_color"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_new_myinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@color/white"
+                    android:paddingBottom="@dimen/dp_10"
+                    android:paddingLeft="@dimen/dp_20"
+                    android:paddingRight="@dimen/dp_10"
+                    android:paddingTop="@dimen/dp_10">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/headLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <com.txh.im.widget.CircleImageView
+                                android:id="@+id/touxiang"
+                                android:layout_width="70dp"
+                                android:layout_height="70dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/wode"
+                                android:clickable="true" />
+
+                            <TextView
+                                android:id="@+id/tv_unittype"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="60dp"
+                                android:background="@drawable/btn_bg_red_conner_5"
+                                android:padding="@dimen/dp_3"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_head_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_marginRight="@dimen/dp_50"
+                            android:gravity="center_vertical"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/color_333333"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_toLeftOf="@+id/iv_arrow"
+                        android:background="@drawable/weima" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:background="@drawable/content_return_arrow"
+                        android:gravity="center_vertical" />
+
+                </RelativeLayout>
+
+
+                <ListView
+                    android:id="@+id/lv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@android:color/transparent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#00000000"
+                    android:dividerHeight="0dip"
+                    android:listSelector="@android:color/transparent" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+
+
+</LinearLayout>

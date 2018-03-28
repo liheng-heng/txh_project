@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_b"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_50"
+        android:text="密码重置成功！"
+        android:textColor="@color/color_666666"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/chenggong" />
+
+    <TextView
+        android:id="@+id/tv_five_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="5秒后自动登录！"
+        android:textColor="@color/color_333333"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/btn_bg_red"
+        android:text="关闭"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

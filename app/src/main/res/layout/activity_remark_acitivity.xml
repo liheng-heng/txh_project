@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_search"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_title" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_shop_type"
+            style="@style/delive_group_bg_name"
+            android:textSize="@dimen/text_18"
+            android:text="店铺备注" />
+
+        <EditText
+            android:id="@+id/et_shop_name"
+            android:layout_marginTop="2dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:hint="请输入备注名"
+            android:textSize="@dimen/text_16"
+            android:text="" />
+    </LinearLayout>
+</LinearLayout>

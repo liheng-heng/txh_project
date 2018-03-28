@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_friends_data_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_search"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_title" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_user_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_single_list"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <com.txh.im.widget.CircleImageView
+            android:id="@+id/civ_avatar"
+            android:layout_width="40dp"
+            android:layout_height="@dimen/home_single_list"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/scan_friends"
+            app:border_color="@color/white"
+            app:border_width="2dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_click"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="test"
+                android:textColor="@color/goods_text_color"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_txh_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Hello"
+                android:textColor="@color/color_666666"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_friends"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:background="@drawable/btn_bg_red"
+        android:text="通过验证"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="visible" />
+</LinearLayout>

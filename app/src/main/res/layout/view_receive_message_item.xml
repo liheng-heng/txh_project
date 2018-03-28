@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/timestamp_style"
+        android:text="上午9:30" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp">
+
+        <com.txh.im.widget.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/avatar1" />
+
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/avatar"
+            android:background="@drawable/chat_receive_test">
+
+            <TextView
+                android:id="@+id/receive_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Hello"
+                android:textColor="@color/color_333333" />
+
+            <LinearLayout
+                android:id="@+id/ll_receive_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="3dp">
+
+                <ImageView
+                    android:id="@+id/iv_show_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ease_chatfrom_voice_playing"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_voice_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/color_333333"
+                    android:text="1" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/receive_image_message"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+
+            <include layout="@layout/personal_card_view" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_unread_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/fl"
+            android:src="@drawable/ease_voice_unread"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

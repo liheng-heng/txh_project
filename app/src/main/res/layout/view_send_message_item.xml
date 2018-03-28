@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/timestamp"
+        style="@style/timestamp_style"
+        android:text="上午9:30" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp">
+
+        <com.txh.im.widget.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/avatar6" />
+
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@id/avatar"
+            android:background="@drawable/chat_send_test">
+
+            <TextView
+                android:id="@+id/send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Hello"
+                android:textColor="@color/color_333333" />
+
+            <ImageView
+                android:id="@+id/send_image"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/ll_show_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/tv_voice_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:text="1" />
+
+                <ImageView
+                    android:id="@+id/iv_show_voice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ease_chatto_voice_playing"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <include layout="@layout/personal_card_view" />
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/send_message_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@id/fl"
+            android:src="@drawable/send_message_progress" />
+    </RelativeLayout>
+
+
+</LinearLayout>

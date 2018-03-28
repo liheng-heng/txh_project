@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_shopname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:padding="@dimen/dp_10"
+        android:text="娃哈哈专营店"
+        android:textColor="@color/color_333333"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rl_layout"
+        android:background="@color/view_line"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/ll_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_20" />
+
+
+</LinearLayout>

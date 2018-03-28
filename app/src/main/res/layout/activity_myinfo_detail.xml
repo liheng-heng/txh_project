@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_forget_password"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_b">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head_title" />
+
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include"
+        android:cacheColorHint="#00000000"
+        android:descendantFocusability="beforeDescendants"
+        android:dividerHeight="1px" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:background="#fff7b0"
+        android:paddingBottom="@dimen/dp_10"
+        android:paddingLeft="@dimen/dp_15"
+        android:paddingRight="@dimen/dp_15"
+        android:paddingTop="@dimen/dp_10"
+        android:text="@string/desc_txhcode"
+        android:visibility="gone"
+        android:textColor="@color/color_333333" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_desc"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="text_18">14sp</dimen>
+    <dimen name="text_16">12sp</dimen>
+    <dimen name="text_14">10sp</dimen>
+    <dimen name="home_single_list">60dp</dimen>
+    <dimen name="civ_size">35dp</dimen>
+    <dimen name="merchant_size">32dp</dimen>
+    <dimen name="price_grop_button_size">100dp</dimen>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+</resources>

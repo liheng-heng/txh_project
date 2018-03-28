@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        style="@style/recommend_friends_to_others_text"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="A"/>
+
+    <com.txh.im.widget.MyExpandableListview
+        android:id="@+id/elv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/search_box"
+        android:dividerHeight="0dp"
+        android:groupIndicator="@null"
+        android:listSelector="#00000000"/>
+</LinearLayout>

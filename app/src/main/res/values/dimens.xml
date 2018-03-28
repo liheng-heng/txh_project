@@ -1,0 +1,65 @@
+<resources>
+
+    <dimen name="dp_0.5">0.5dp</dimen>
+    <dimen name="dp_1">1.0dp</dimen>
+    <dimen name="dp_2">2.0dp</dimen>
+    <dimen name="dp_3">3.0dp</dimen>
+    <dimen name="dp_4">4.0dp</dimen>
+    <dimen name="dp_5">5.0dp</dimen>
+    <dimen name="dp_6">6.0dp</dimen>
+    <dimen name="dp_7">7.0dp</dimen>
+    <dimen name="dp_8">8.0dp</dimen>
+    <dimen name="dp_9">9.0dp</dimen>
+    <dimen name="dp_10">10.0dp</dimen>
+    <dimen name="dp_12">12.0dp</dimen>
+    <dimen name="dp_13">13.0dp</dimen>
+    <dimen name="dp_15">15.0dp</dimen>
+    <dimen name="dp_16">16.0dp</dimen>
+    <dimen name="dp_18">18.0dp</dimen>
+    <dimen name="dp_19">19.0dp</dimen>
+    <dimen name="dp_20">20.0dp</dimen>
+    <dimen name="dp_25">25.0dp</dimen>
+    <dimen name="dp_30">30.0dp</dimen>
+    <dimen name="dp_40">40.0dp</dimen>
+    <dimen name="dp_45">45.0dp</dimen>
+    <dimen name="dp_50">50.0dp</dimen>
+    <dimen name="dp_60">60.0dp</dimen>
+    <dimen name="dp_70">70.0dp</dimen>
+    <dimen name="dp_75">75.0dp</dimen>
+    <dimen name="dp_80">80.0dp</dimen>
+    <dimen name="dp_90">90.0dp</dimen>
+    <dimen name="dp_100">100.0dp</dimen>
+    <dimen name="dp_110">110.0dp</dimen>
+    <dimen name="dp_120">120.0dp</dimen>
+    <dimen name="dp_130">130.0dp</dimen>
+    <dimen name="dp_140">140.0dp</dimen>
+    <dimen name="dp_150">150.0dp</dimen>
+
+    <!-- 文字 -->
+    <!-- 商品详情 -->
+    <!-- 商品库存 -->
+    <!-- 修改手机号 -->
+    <!-- marginleft -->
+
+
+    <!--jiajia-->
+    <dimen name="home_margin_lr">10dp</dimen>
+    <dimen name="home_single_list">70dp</dimen>
+    <dimen name="pop_image">20dp</dimen>
+    <dimen name="civ_size">40dp</dimen>
+    <dimen name="price_grop_button_size">110dp</dimen>
+    <dimen name="shop_car_top_text">13sp</dimen>
+
+    <!--text_20:btn字体大小,30px;text_18:26px;text_16:24px,22px;-->
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="merchant_size">35dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="amap_height">260dp</dimen>
+</resources>

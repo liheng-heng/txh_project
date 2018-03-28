@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_ten"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_search"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp_12"
+        android:text="ai"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/text_16" />
+
+    <com.txh.im.widget.MyExpandableListview
+        android:id="@+id/elv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@color/search_box"
+        android:dividerHeight="0dp"
+        android:groupIndicator="@null"
+        android:listSelector="#00000000" />
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingRight="@dimen/dp_50"
+        android:paddingLeft="@dimen/dp_50"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_30"
+        android:paddingTop="@dimen/dp_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp_5"
+            android:text="已提醒商家发货"
+            android:textColor="@color/red_text"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="(每日可提醒一次)"
+            android:textColor="@color/color_333333"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_ok"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@drawable/btn_bg_red_conner_5"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="@dimen/dp_3"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

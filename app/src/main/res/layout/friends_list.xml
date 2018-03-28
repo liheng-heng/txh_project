@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_user_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_single_list"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_buddy_expansion"
+            android:layout_width="@dimen/civ_size"
+            android:layout_height="@dimen/civ_size"
+            android:layout_margin="8dp"
+            android:src="@drawable/buddy_list_expansion"
+            android:visibility="gone" />
+
+        <com.txh.im.widget.CircleImageView
+            android:id="@+id/civ_avatar"
+            android:layout_width="@dimen/civ_size"
+            android:layout_height="@dimen/civ_size"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/scan_friends" />
+
+        <LinearLayout
+            android:id="@+id/ll_click"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="test"
+                android:textColor="@color/goods_text_color"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_txh_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Hello"
+                android:textColor="@color/color_666666"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_add_friends"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/dp_30"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_bg_red"
+            android:text="添加"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_merchant_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:paddingRight="10dp"
+            android:src="@drawable/merchant_icon"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/search_box"
+        android:visibility="gone" />
+
+</LinearLayout>

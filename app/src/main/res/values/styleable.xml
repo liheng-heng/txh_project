@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageWordView">
+        <attr name="et_text" format="string"></attr>
+        <attr name="iv_image" format="integer"></attr>
+    </declare-styleable>
+
+</resources>

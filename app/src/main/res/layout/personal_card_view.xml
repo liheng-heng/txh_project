@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_card_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_user_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_single_list"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <com.txh.im.widget.CircleImageView
+            android:id="@+id/civ_card_avatar"
+            android:layout_width="@dimen/civ_size"
+            android:layout_height="@dimen/civ_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/scan_friends"/>
+
+        <LinearLayout
+            android:id="@+id/ll_click"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_card_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:maxEms="10"
+                android:text="test"
+                android:textColor="@color/goods_text_color"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_card_shopname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="Hello"
+                android:enabled="true"
+                android:textColor="@color/color_666666"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/search_box"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_myself_card"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="12dp"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:textColor="@color/color_333333"
+        android:text="个人名片" />
+
+</LinearLayout>

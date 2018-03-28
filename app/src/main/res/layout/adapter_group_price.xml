@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_ten" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/civ_size"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/ll_head_20">
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_attribute_group_name"-->
+            <!--style="@style/text_height_20"-->
+            <!--android:text="价格分组名称:" />-->
+
+            <TextView
+                android:id="@+id/tv_group_name"
+                style="@style/text_height_20"
+                android:layout_marginLeft="10dp"
+                android:maxEms="15"
+                android:ellipsize="end"
+                android:text="A" />
+
+            <TextView
+                android:id="@+id/tv_default_price"
+                style="@style/text_height_20"
+                android:text="(默认价格)" />
+        </LinearLayout>
+
+        <!--<LinearLayout style="@style/ll_head_20">-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/tv_attribute_final_name"&ndash;&gt;-->
+        <!--&lt;!&ndash;style="@style/text_height_20"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="最后操作人:" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/tv_final_name"&ndash;&gt;-->
+        <!--&lt;!&ndash;style="@style/text_height_20"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="某某" />&ndash;&gt;-->
+        <!--</LinearLayout>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/civ_size"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_one"
+            style="@style/group_price_btn"
+            android:background="@drawable/btn_bg_blue"
+            android:text="编辑价格" />
+
+        <FrameLayout
+            android:id="@+id/fl_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_two"
+                style="@style/group_price_btn"
+                android:background="@drawable/btn_bg_blue"
+                android:text="添加/查看门店" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_three"
+            style="@style/group_price_btn"
+            android:background="@drawable/btn_bg_red"
+            android:text="禁用" />
+    </LinearLayout>
+</LinearLayout>

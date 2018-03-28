@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp_10">
+
+    <FrameLayout
+        android:layout_width="@dimen/dp_60"
+        android:layout_height="@dimen/dp_60">
+
+        <com.txh.im.widget.RoundAngleImageView
+            android:id="@+id/camera_a"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/add_pictrue" />
+
+        <ImageView
+            android:id="@+id/camera_d"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="right"
+            android:src="@drawable/delete" />
+    </FrameLayout>
+</LinearLayout>

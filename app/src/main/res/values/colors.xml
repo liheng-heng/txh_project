@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="text_red">#e65252</color>
+    <!--<color name="red3">#E65252</color>-->
+    <color name="redff0000">#ff0000</color>
+    <color name="gray_normal">#666667</color>
+    <color name="gray_check_btn_bg">#a4a4a4</color>
+    <color name="da_gray_text_color">#666666</color>
+    <color name="color_333333">#333333</color>
+    <!--<color name="color_666666">#666666</color>-->
+    <color name="color_999999">#999999</color>
+    <color name="bg_gray">#EBEBEB</color>
+    <color name="huise">#D6D6D6</color>
+    <color name="huise5">#CCCCCC</color>
+    <color name="black">#ff000000</color>
+    <color name="black4c4a4b">#4c4a4b</color>
+    <color name="blue">#058FF1</color>
+    <!--<color name="goods_text_color">#333333</color>-->
+    <color name="grey_text">#8F8F8F</color>
+    <color name="blue_text">#058FF1</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="blue_more">#4777e5</color>
+
+    <!-- 浅灰色字体 -->
+    <!-- 深灰色 -->
+    <color name="huise4">#999999</color>
+    <color name="huise2">#E4E4E4</color>
+    <color name="buttom_color">#e65252</color>
+    <color name="red000">#ff0000</color>
+    <!--红色字体颜色-->
+    <color name="red_text">#e75858</color>
+    <!--条目之间view背景色-->
+    <color name="view_bg_color">#eeeeee</color>
+    <!--1px宽度的view背景色-->
+    <color name="view_line">#eeeeee</color>
+
+    <color name="activity_b">#ffffffff</color>
+    <color name="activity_bg">#ededed</color>
+    <!-- 黑红色 -->
+    <color name="blackred">#EEA9B8</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="search_box">#e0e3eb</color>
+    <color name="dipatch_bg">#e75858</color>
+    <color name="bg_search">#eeeeee</color>
+    <color name="deep_red">#d93f3f</color>
+    <color name="send_meeage">#c5971a</color>
+    <color name="btn_green">#4cd964</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="orange_color">#ffa628</color>
+    <color name="umeng_blue">#0086DC</color>
+
+    <color name="map_bg_grey">#E9ECF1</color>
+    <color name="border_grey">#DEDFE2</color>
+
+</resources>

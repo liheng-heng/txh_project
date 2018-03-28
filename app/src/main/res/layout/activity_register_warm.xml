@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_forget_password"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_b">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/head_title" />
+
+    <LinearLayout
+        android:id="@+id/rl_class_brand_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include"
+        android:layout_marginTop="@dimen/dp_30"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/scan_friends" />
+
+        <TextView
+            android:id="@+id/tv_new_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:padding="@dimen/dp_5"
+            android:text="15612345699"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_class_brand_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_marginRight="@dimen/dp_25"
+        android:layout_marginTop="20dp"
+        android:padding="@dimen/dp_10"
+        android:text="手机号xxxxxxxxx已经被以上用户使用，请确认该账户为本人所有"
+        android:textColor="@color/color_333333"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_desc"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/person_register_ok2"
+        android:text="是我的，立即登录"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_1"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/btn_bg_red"
+        android:text="换个手机号重新注册"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

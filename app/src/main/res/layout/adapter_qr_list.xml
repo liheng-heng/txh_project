@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_search" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_single_list"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.txh.im.widget.CircleImageView
+            android:id="@+id/civ_avatar"
+            style="@style/civ_style"
+            android:src="@drawable/scan_friends"
+            app:border_color="@color/white"
+            app:border_width="2dp" />
+
+        <TextView
+            android:id="@+id/tv_shop_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/iv_qr"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/home_margin_lr"
+            android:paddingRight="10dp"
+            android:src="@drawable/content_two_dimensional_code" />
+    </LinearLayout>
+
+</LinearLayout>
